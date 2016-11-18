@@ -10,10 +10,10 @@
     <script src="js/snackbar.js"></script>
     <script>
       function getSuccess() {
-        snackbar.success(document.querySelectorAll('.text-input').value);
+        snackbar.success($( ".text-input").val());
       }
       function getError() {
-        snackbar.error(document.querySelectorAll('.text-input').value);
+        snackbar.error($( ".text-input").val());
       }
     </script>
   </head>

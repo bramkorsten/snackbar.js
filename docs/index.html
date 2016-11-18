@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Snackbar.js demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../snackbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../snackbar.js"></script>
+    <script>
+      function getSuccess() {
+        snackbar.success($('.text-input').val());
+      }
+      function getError() {
+        snackbar.error($('.text-input').val());
+      }
+    </script>
+  </head>
+  <body>
+    <div class="foreground">
+      <div class="title">
+        <h1>
+          Snackbar.js
+        </h1>
+        <h2>Snackbar like notifications for every device. No bullshit, just notifications!
+        </h2>
+      </div>
+      <div class="message-wrap">
+        <p id="description">
+          Enter your notification message here:
+        </p>
+        <input class="text-input" type="text"></input>
+      </div>
+      <div class="buttons">
+        <button class="display-button" onClick="getSuccess()">Display success message</button>
+        <button class="display-button" onClick="getError()">Display error message</button>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,145 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #ba89ff; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ba89ff 0%, #9307ff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ba89ff 0%,#9307ff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ba89ff 0%,#9307ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba89ff', endColorstr='#9307ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  
+  }
+
+.foreground {
+  z-index: 1;
+}
+
+.title {
+  margin: 100px 0 50px;
+}
+
+.title h2 {
+  font-family: Roboto-s;
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+  margin: 0;
+  font-weight: 100;
+}
+
+.title h1 {
+  font-family: Roboto-s;
+  width: 100%;
+  text-align: center;
+  font-size: 10em;
+  color: #fff;
+  margin: 0;
+}
+
+.display-button {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: #fff;
+  font-family: 'Roboto-s';
+  font-size: 15px;
+  font-weight: 100;
+  transition: 0.2s all;
+  margin: 0 20px 0 0;
+  display: block;
+  width: 250px;
+  float: left;
+}
+
+.display-button:hover {
+  background: #fff;
+  color: #9307ff;
+  font-family: 'Roboto-s';
+}
+
+.buttons {
+  width: 550px;
+  margin-left: calc(50% - 260px);
+}
+
+#description {
+  font-family: 'Roboto-s';
+  color: #fff;
+  font-weight: 100;
+  width: 520px;
+  margin-left: calc(50% - 260px);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  background: 0;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Roboto-s';
+  width: 520px;
+  height: 52px;
+  margin-left: calc(50% - 260px);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 850px) {
+  
+  .title h1 {
+    font-size: 7em;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  
+  .title h1 {
+    font-size: 4em;
+  }
+  
+  .title h2 {
+    font-size: 1em;
+    margin: 0 20px;
+  }
+  
+  .text-input {
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: calc(50% - 160px);
+  }
+  
+  .buttons {
+    width: 350px;
+    margin-left: calc(50% - 160px);
+  }
+  
+  .display-button {
+    padding: 10px 5px;
+    font-size: 12px;
+    width: 150px;
+  }
+  
+  #description {
+    margin-left: calc(50% - 160px);
+    width: 320px;
+  }
+  
+}

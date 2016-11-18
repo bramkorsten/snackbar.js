@@ -3,16 +3,17 @@
     <title>Snackbar.js demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../snackbar.css">
+    <link rel="stylesheet" href="css/snackbar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../snackbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+    <script src="js/snackbar.js"></script>
     <script>
       function getSuccess() {
-        snackbar.success($('.text-input').val());
+        snackbar.success(document.querySelectorAll('.text-input').value);
       }
       function getError() {
-        snackbar.error($('.text-input').val());
+        snackbar.error(document.querySelectorAll('.text-input').value);
       }
     </script>
   </head>

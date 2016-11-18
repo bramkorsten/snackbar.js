@@ -32,6 +32,7 @@ function snackbar() {
     var timeout;
     if (active) {
       clearTimeout(timeout);
+      
     $('.snackbar-wrapper').stop().animate(
                     {
                         bottom: '-50px'
@@ -50,7 +51,7 @@ function snackbar() {
     function newContainer() {
       var snackbarcontainer = document.createElement("div");
       snackbarcontainer.className = "snackbar-wrapper";
-      snackbarcontainer.innerHTML = '<p>' + message + '</p><a>okay</a>';
+      snackbarcontainer.innerHTML = '<p>' + message + '</p><a>dismiss</a>';
       document.body.appendChild(snackbarcontainer);
       active = true;
       $( ".snackbar-wrapper a" ).click(function() {

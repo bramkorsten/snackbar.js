@@ -1,6 +1,6 @@
 /*
  * Snackbar.css
- * Copyright 2016
+ * Copyright 2017
  * Authors: Bram Korsten
  * All Rights Reserved.
  * Use, reproduction, distribution, and modification of this code is subject to the terms and
@@ -120,7 +120,7 @@
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
- 
+
 .snackbar-wrapper {
   min-width: 288px;
   max-width: 568px;
@@ -137,6 +137,7 @@
   font-family: 'Roboto-s';
   border-radius: 2px;
   z-index: 9999;
+  display: flex;
 }
 
 .snackbar-wrapper.message a {
@@ -152,17 +153,22 @@
   float: left;
   margin: 0;
   opacity: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
 }
 
 .snackbar-wrapper a {
   float: right;
   padding: 11px 13px;
-  margin: 5px 20px 5px 0;
+  margin: 5px 5px 5px 0;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 2px;
   transition: 0.3s all;
+  user-select: none;
 }
 
 .snackbar-wrapper a:hover {

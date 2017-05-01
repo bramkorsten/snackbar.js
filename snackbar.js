@@ -1,6 +1,6 @@
 /*
  * Snackbar.js
- * Copyright 2016
+ * Copyright 2017
  * Authors: Bram Korsten
  * All Rights Reserved.
  * Use, reproduction, distribution, and modification of this code is subject to the terms and
@@ -14,25 +14,25 @@ $.easing.material = function (x, t, b, c, d) {
 }
 
 function snackbar() {
-  
+
   var type = 'message';
   var active = false;
-  
+
   this.success = function(message) {
     this.type = "message";
     createContainer(message, this.type);
   };
-  
+
   this.error = function(message) {
     this.type = "error";
     createContainer(message, this.type);
   };
-  
+
   function createContainer(message, type) {
     var timeout;
     if (active) {
       clearTimeout(timeout);
-      
+
     $('.snackbar-wrapper').stop().animate(
                     {
                         bottom: '-50px'

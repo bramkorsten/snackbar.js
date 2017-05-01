@@ -148,7 +148,7 @@
 }
 
 .snackbar-wrapper p {
-  padding: 16px 24px;
+  padding: 16px 0 16px 24px;
   float: left;
   margin: 0;
   opacity: 0;
@@ -157,7 +157,7 @@
 .snackbar-wrapper a {
   float: right;
   padding: 11px 13px;
-  margin: 5px 20px;
+  margin: 5px 20px 5px 0;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;

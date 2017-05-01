@@ -2,7 +2,8 @@
 snackbar like notifications. Just the bare minimum, no bullshit :)
 
 ### Using Snackbar.js
-Download the source or use these linksin your files:
+Download the source or use these links in your files:
+
 `https://rawgit.com/bramkorsten/snackbar.js/v1.1.0/snackbar.css`
 `https://rawgit.com/bramkorsten/snackbar.js/v1.1.0/snackbar.js`
 

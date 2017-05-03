@@ -8,6 +8,12 @@
  *
  */
 
+var link = document.createElement( "link" );
+link.href = "https://rawgit.com/bramkorsten/snackbar.js/v1.2.0/snackbar.css";
+link.type = "text/css";
+link.rel = "stylesheet";
+document.getElementsByTagName( "head" )[0].appendChild( link );
+
 $.easing.material = function (x, t, b, c, d) {
         if ((t/=d/2) < 1) return c/2*t*t*t + b;
         return c/2*((t-=2)*t*t + 2) + b;

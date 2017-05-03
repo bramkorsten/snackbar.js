@@ -9,7 +9,7 @@
  */
 
 var link = document.createElement( "link" );
-link.href = "https://rawgit.com/bramkorsten/snackbar.js/v1.2.0/snackbar.css";
+link.href = "https://rawgit.com/bramkorsten/snackbar.js/v1.2.1/snackbar.css";
 link.type = "text/css";
 link.rel = "stylesheet";
 document.getElementsByTagName( "head" )[0].appendChild( link );
@@ -23,22 +23,25 @@ function snackbar() {
 
   var type = 'message';
   var active = false;
+  var timeout;
 
   this.success = function(message) {
     this.type = "message";
+    clearTimeout(timeout);
+    timeout = null;
     createContainer(message, this.type);
+
   };
 
   this.error = function(message) {
     this.type = "error";
+    clearTimeout(timeout);
+    timeout = null;
     createContainer(message, this.type);
   };
 
   function createContainer(message, type) {
-    var timeout;
     if (active) {
-      clearTimeout(timeout);
-
     $('.snackbar-wrapper').stop().animate(
                     {
                         bottom: '-50px'
@@ -55,6 +58,10 @@ function snackbar() {
       newContainer();
     }
     function newContainer() {
+      if(timeout){
+        clearTimeout(timeout);
+        timeout = null;
+      }
       var snackbarcontainer = document.createElement("div");
       snackbarcontainer.className = "snackbar-wrapper";
       snackbarcontainer.innerHTML = '<p>' + message + '</p><a>dismiss</a>';

@@ -4,8 +4,7 @@ snackbar like notifications. Just the bare minimum, no bullshit :)
 ### Using Snackbar.js
 Download the source or use these links in your files:
 
-`https://rawgit.com/bramkorsten/snackbar.js/v1.1.0/snackbar.css`
-`https://rawgit.com/bramkorsten/snackbar.js/v1.1.0/snackbar.js`
+`https://rawgit.com/bramkorsten/snackbar.js/v1.2.1/snackbar.js`
 
 ### Demo
 Check out the demo page right [here](https://bramkorsten.github.io/snackbar.js/)

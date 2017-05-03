@@ -9,7 +9,7 @@
  */
 
 var link = document.createElement( "link" );
-link.href = "https://rawgit.com/bramkorsten/snackbar.js/v1.2.1/snackbar.css";
+link.href = "https://rawgit.com/bramkorsten/snackbar.js/v1.2.2/snackbar.css";
 link.type = "text/css";
 link.rel = "stylesheet";
 document.getElementsByTagName( "head" )[0].appendChild( link );
